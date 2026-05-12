@@ -5,11 +5,10 @@ export interface ResultDetail {
   time: string;
   tags: string[];
   isHidden?: boolean;
-  triggerText?: string; // 仅隐藏人格使用
+  triggerText?: string; 
 }
 
 export const resultsMap: Record<string, ResultDetail> = {
-  // --- 主人格 (Main Types) ---
   "新宿高压运行型": {
     title: "新宿高压运行型",
     description: `你在东京很少真正停下来。\n\n地图永远开着，电量长期低于20%，却还是会在深夜临时增加新的目的地。\n\n你喜欢东京那种：“再快一点也没关系”的速度感。\n\n比起休息，你更害怕错过。`,
@@ -19,7 +18,7 @@ export const resultsMap: Record<string, ResultDetail> = {
   },
   "涩谷持续加载中型": {
     title: "涩谷持续加载中型",
-    description: `东京对你来说，像一个永远不会结束的新页面。\n\习惯在人群里快速切换情绪，一边赶路，一边被新的店、新的音乐、新的灯光吸引。\n\n你很难真正“完成”一次东京旅行。\n\n因为总会想：再多看一点。`,
+    description: `东京对你来说，像一个永远不会结束的新页面。\n\n习惯在人群里快速切换情绪，一边赶路，一边被新的店、新的音乐、新的灯光吸引。\n\n你很难真正“完成”一次东京旅行。\n\n因为总会想：再多看一点。`,
     area: "涩谷 / 原宿 / 表参道",
     time: "20:16 的十字路口",
     tags: ["#持续加载中", "#东京高浓度玩家", "#热闹依赖"]
@@ -94,8 +93,6 @@ export const resultsMap: Record<string, ResultDetail> = {
     time: "22:13 的便利店灯光",
     tags: ["#补给人格", "#回血型选手", "#东京续航系统"]
   },
-
-  // --- 隐藏人格 (Hidden Types / SUB-SIGNAL) ---
   "凌晨两点便利店人格": {
     title: "凌晨两点便利店人格",
     isHidden: true,
