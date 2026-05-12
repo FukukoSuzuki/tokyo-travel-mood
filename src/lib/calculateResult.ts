@@ -1,4 +1,4 @@
-import { QUESTIONS } from "@/data/questions";
+import { questions } from "@/data/questions";
 import {
   HIDDEN_TYPES,
   NORMAL_TYPES,
