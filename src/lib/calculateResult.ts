@@ -1,14 +1,9 @@
 import { questions } from "@/data/questions";
 import {
-  HIDDEN_TYPES,
-  NORMAL_TYPES,
-  RESULT_BY_TYPE,
-  RESULTS,
-  type HiddenResultType,
-  type NightKeyword,
-  type NormalResultType,
-  type Result,
-  type ResultType,
+  hidden_types,
+  normal_types,
+  result_by_type,
+  results,
 } from "@/data/results";
 
 export type Answer = {
